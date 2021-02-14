@@ -73,4 +73,12 @@ class Credentials:
 
         return False
 
+    @classmethod
+    def display_credentials(cls):
+        '''
+        Method to display the list of credentials saved.
+        '''
+        return cls.credential_list
+
+
         
