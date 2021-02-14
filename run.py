@@ -122,3 +122,51 @@ def main():
                     print('\n')
                     short_code = input('Enter a choice: ').lower()
                     print("-"*10)
+
+                    if short_code == 'ex':
+                            print(" ")
+                            print(f'Thank you for using Password Lock. Goodbye {user_name}')
+                            # break
+
+                        elif short_code == 'cc':
+                            print('\n')
+                            print('Enter your new credentials:')
+                            print('\n')  
+                            
+                            account_name = input('Enter your account name - ')
+
+                            while True:
+                                print('\n')
+                                print("-"*20)
+                                print('Please select an option for creating a password: \n ep - enter your password \n gp - generate a password \n ex - exit')
+                                choice = input('Enter an option: ').lower()
+                                print("-"*10)
+
+                                if choice == 'ep':
+                                    
+                                    print('\n')
+                                    password = input('Enter your password: ')
+                                    break
+                                elif choice == 'gp':
+                                    password = generate_password()
+                                    break
+                                elif choice == 'ex':
+                                    break
+                                else:
+                                    print('Wrong option entered. Try again!')
+                
+
+
+                else:
+                print(' ')
+                print('Wrong details entered. Try again or Create an Account!')
+
+        else:
+            print("-"*20)
+            print('\n')
+            print('Wrong option entered. Try again!')
+
+
+
+if __name__ == '__main__':
+	main()
