@@ -1,7 +1,7 @@
 from user import User
 import random #import random variable generator
 import string  #import string constants
-import pyperclip
+# import pyperclip
 
 
 class Credentials:
@@ -13,7 +13,7 @@ class Credentials:
     
     def __init__(self,user_name,account_name,password):
         '''
-        Method to define the properties for each user object.
+        Method to define the properties for each credentials object.
         '''
         self.user_name = user_name
         self.account_name = account_name
