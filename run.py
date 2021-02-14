@@ -70,3 +70,10 @@ def display_credential(credentials):
     Function that displays saved credentials
     '''
     return Credentials.display_credentials()
+
+def copy_credentials(credentials):
+    '''
+    Function that displays saved credentials
+    '''
+    return Credentials.display_credentials()
+
