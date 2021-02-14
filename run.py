@@ -159,6 +159,50 @@ def main():
                             print('\n')
                             print(f'Credential Created: Account Name: {account_name} - Password: {password}')
                             print('\n') 
+
+                    elif short_code == 'fc':
+                        print("Enter the account name you want to search for:")
+    
+                        account_name = input()
+                        if check_existing_account(account_name):
+                                credential = find_credential(account_name)
+                                print(f"Here is the Credentials for {credential.account_name} ")
+                                print('\n')
+                                print(f'account Name: {credential.account_name} - Account Name: {credential.account_name} - Password: {credential.password}')
+                                print('\n')
+                                print('-' * 20)
+        
+                        else:
+                                print('\n')
+                                print("That credential does not exist")elif short_code == 'fc':
+                        print("Enter the account name you want to search for:")
+    
+                        account_name = input()
+                        if check_existing_account(account_name):
+                                credential = find_credential(account_name)
+                                print(f"Here is the Credentials for {credential.account_name} ")
+                                print('\n')
+                                print(f'account Name: {credential.account_name} - Account Name: {credential.account_name} - Password: {credential.password}')
+                                print('\n')
+                                print('-' * 20)
+        
+                        else:
+                                print('\n')
+                                print("That credential does not exist")elif short_code == 'fc':
+                        print("Enter the account name you want to search for:")
+    
+                        account_name = input()
+                        if check_existing_account(account_name):
+                                credential = find_credential(account_name)
+                                print(f"Here is the Credentials for {credential.account_name} ")
+                                print('\n')
+                                print(f'account Name: {credential.account_name} - Account Name: {credential.account_name} - Password: {credential.password}')
+                                print('\n')
+                                print('-' * 20)
+        
+                        else:
+                                print('\n')
+                                print("That credential does not exist")
                 
 
 
