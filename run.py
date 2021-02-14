@@ -102,3 +102,23 @@ def main():
             # print(" ")
             print(f'New Account Created for: {user_name} using password: {password}')
             print('\n')
+
+        elif short_code == 'lg':
+            print("--"*50)
+            print('\n')
+            print('Enter your account details to login:')
+            print('\n')
+            user_name = input('Enter your user name - ')
+            password = str(input('Enter your password - '))
+            user_exists = verify_user(user_name,password)
+            if user_exists == user_name:
+                print('\n')
+                print(f'Welcome {user_name}. Please select a short code to continue.')
+                print(' ')
+
+                while True:
+                    print("--"*50)
+                    print('Our short codes: \n cc-Create a Credential \n sc-Show Credentials \n fc- Find a Credential  \n ex-Exit')
+                    print('\n')
+                    short_code = input('Enter a choice: ').lower()
+                    print("-"*10)
