@@ -237,6 +237,12 @@ def main():
                             print("You don't seem to have saved any credentials yet. enter cc to create one.")
                             print('\n')
 
+                        elif short_code == 'copy':
+                        print(' ')
+                        account_name = input('Enter the account name for the credential password to copy: ')
+                        copy_credentials(account_name)
+                        print('\n')
+
 
 
 
