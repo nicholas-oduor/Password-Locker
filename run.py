@@ -223,6 +223,26 @@ def main():
                                 print('\n')
                                 print("That credential does not exist")
                                 print('\n')
+
+                    elif short_code == 'sc':
+                        print('\n')
+                        if display_credential(user_name):
+                            print('Here is a list of all your credentials')
+                            print("  ")
+                            for credential in display_credential(user_name):
+                                print(f'account Name: {credential.account_name} - Account Name: {credential.account_name} - Password: {credential.password}')
+                            print('\n')
+                        else:
+                            print('\n')
+                            print("You don't seem to have saved any credentials yet. enter cc to create one.")
+                            print('\n')
+
+
+
+
+
+
+
                 
 
 
