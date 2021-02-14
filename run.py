@@ -1,4 +1,4 @@
-import pyperclip
+# import pyperclip
 from user import User
 from credentials import Credentials
 import random #import random variable generator
@@ -128,67 +128,39 @@ def main():
                             print(f'Thank you for using Password Lock. Goodbye {user_name}')
                             # break
 
-                        elif short_code == 'cc':
-                            print('\n')
-                            print('Enter your new credentials:')
-                            print('\n')  
-                            
-                            account_name = input('Enter your account name - ')
+                    elif short_code == 'cc':
+                        print('\n')
+                        print('Enter your new credentials:')
+                        print('\n')  
+                        
+                        account_name = input('Enter your account name - ')
 
-                            while True:
+                        while True:
+                            print('\n')
+                            print("-"*20)
+                            print('Please select an option for creating a password: \n ep - enter your password \n gp - generate a password \n ex - exit')
+                            choice = input('Enter an option: ').lower()
+                            print("-"*10)
+
+                            if choice == 'ep':
+                                
                                 print('\n')
-                                print("-"*20)
-                                print('Please select an option for creating a password: \n ep - enter your password \n gp - generate a password \n ex - exit')
-                                choice = input('Enter an option: ').lower()
-                                print("-"*10)
+                                password = input('Enter your password: ')
+                                break
+                            elif choice == 'gp':
+                                password = generate_password()
+                                break
+                            elif choice == 'ex':
+                                break
+                            else:
+                                print('Wrong option entered. Try again!')
 
-                                if choice == 'ep':
-                                    
-                                    print('\n')
-                                    password = input('Enter your password: ')
-                                    break
-                                elif choice == 'gp':
-                                    password = generate_password()
-                                    break
-                                elif choice == 'ex':
-                                    break
-                                else:
-                                    print('Wrong option entered. Try again!')
-
-                            save_credentials(create_credential(user_name,account_name,password))
-                            print('\n')
-                            print(f'Credential Created: Account Name: {account_name} - Password: {password}')
-                            print('\n') 
+                        save_credentials(create_credential(user_name,account_name,password))
+                        print('\n')
+                        print(f'Credential Created: Account Name: {account_name} - Password: {password}')
+                        print('\n') 
 
                     elif short_code == 'fc':
-                        print("Enter the account name you want to search for:")
-    
-                        account_name = input()
-                        if check_existing_account(account_name):
-                                credential = find_credential(account_name)
-                                print(f"Here is the Credentials for {credential.account_name} ")
-                                print('\n')
-                                print(f'account Name: {credential.account_name} - Account Name: {credential.account_name} - Password: {credential.password}')
-                                print('\n')
-                                print('-' * 20)
-        
-                        else:
-                                print('\n')
-                                print("That credential does not exist")elif short_code == 'fc':
-                        print("Enter the account name you want to search for:")
-    
-                        account_name = input()
-                        if check_existing_account(account_name):
-                                credential = find_credential(account_name)
-                                print(f"Here is the Credentials for {credential.account_name} ")
-                                print('\n')
-                                print(f'account Name: {credential.account_name} - Account Name: {credential.account_name} - Password: {credential.password}')
-                                print('\n')
-                                print('-' * 20)
-        
-                        else:
-                                print('\n')
-                                print("That credential does not exist")elif short_code == 'fc':
                         print("Enter the account name you want to search for:")
     
                         account_name = input()
@@ -237,22 +209,16 @@ def main():
                             print("You don't seem to have saved any credentials yet. enter cc to create one.")
                             print('\n')
 
-                        elif short_code == 'copy':
+                    elif short_code == 'copy':
                         print(' ')
                         account_name = input('Enter the account name for the credential password to copy: ')
                         copy_credentials(account_name)
                         print('\n')
 
-
-
-
-
-
-
-                
-
-
                 else:
+                    print('Wrong option entered. Try again!')
+
+            else:
                 print(' ')
                 print('Wrong details entered. Try again or Create an Account!')
 
