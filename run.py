@@ -73,7 +73,32 @@ def display_credential(credentials):
 
 def copy_credentials(credentials):
     '''
-    Function that displays saved credentials
+    Function that copies saved credentials
     '''
     return Credentials.display_credentials()
 
+def main():
+    print(' ')
+    print('Hello! Welcome to password Locker')
+    while True:
+        print("--"*50)
+        print('\n')
+        
+        print('Use these short codes: \n ca - Create an Account \n lg - Login \n ex - Exit')
+        print('\n')
+        short_code = input().lower().strip()
+        if short_code == 'ex':
+            break 
+        
+        elif short_code == 'ca':
+            print("-"*20)
+            print('\n')
+            print('Create a new account:')
+            print('\n')
+           
+            user_name = input('Enter your User name - ')
+            password = input('Enter your password - ')
+            save_user(create_user(user_name, password))
+            # print(" ")
+            print(f'New Account Created for: {user_name} using password: {password}')
+            print('\n')
