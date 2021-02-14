@@ -18,3 +18,10 @@ def save_user(user):
     '''
     user.save_user()
     
+def verify_user(user_name,password):
+    '''
+    Function that veryfies the existing user
+    
+    '''
+    check_user = Credentials.check_user(user_name,password)
+    return check_user
