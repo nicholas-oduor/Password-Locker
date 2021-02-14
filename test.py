@@ -1,6 +1,7 @@
 import unittest # Importing the unittest module
 from user import User
 import pyperclip
+from credentials import Credentials
 
 class TestUser(unittest.TestCase):
     '''
