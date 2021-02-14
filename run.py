@@ -154,6 +154,11 @@ def main():
                                     break
                                 else:
                                     print('Wrong option entered. Try again!')
+
+                            save_credentials(create_credential(user_name,account_name,password))
+                            print('\n')
+                            print(f'Credential Created: Account Name: {account_name} - Password: {password}')
+                            print('\n') 
                 
 
 
