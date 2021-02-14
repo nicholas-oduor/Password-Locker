@@ -34,5 +34,17 @@ class TestUser(unittest.TestCase):
         tearDown method that does clean up after each test case has run.
         '''
         User.user_list = []   
+
+class TestCredentials(unittest.TestCase):
+    '''
+    Test class that defines test cases for the Credentials class behaviours.
+    '''
+    
+    def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        
+        self.new_credential = Credentials('nicholas','Facebook','123456')
     
         
