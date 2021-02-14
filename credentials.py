@@ -42,4 +42,19 @@ class Credentials:
         	if (user.user_name == user_name and user.password == password):
         		current_user = user.user_name
         return current_user
+    
+    @classmethod
+    def find_by_account_name(cls, account_name):
+        '''
+        Method that takes in a account_name and returns a credential that matches that account_name.
+
+        Args:
+            account_name: Phone account_name to search for
+        Returns :
+            Credential of person that matches the account_name.
+        '''
+
+        for credential in cls.credential_list:
+            if credential.account_name == account_name:
+                return credential
         
