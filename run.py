@@ -203,6 +203,26 @@ def main():
                         else:
                                 print('\n')
                                 print("That credential does not exist")
+
+                    elif short_code == 'rc':
+                        print('\n')
+                        print("Enter the account name of the credentials you want to remove")
+                        print('\n')
+    
+                        account_name = input('Enter the account name- ')
+                        # del_credential(credential)
+
+                        if find_credential(account_name):
+                                credential = find_credential(account_name)
+                                credential.delete_credentials()									
+                                print("Here is a list of all deleted credentials")
+                                print('\n')
+
+
+                        else:
+                                print('\n')
+                                print("That credential does not exist")
+                                print('\n')
                 
 
 
