@@ -57,3 +57,6 @@ To work with Password Locker App you need to have some few requirements.
 - pyperclip
 
 - Code/text editor
+
+## Technologies used
+Python
