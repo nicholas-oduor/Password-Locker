@@ -60,3 +60,11 @@ To work with Password Locker App you need to have some few requirements.
 
 ## Technologies used
 Python
+
+## Author
+- Nicholas  Oduor
+
+## License 
+[MIT](https://github.com/nicholas-oduor/Password-Locker/blob/master/LICENSE.md)
+
+ © [Nicholas  Oduor](https://github.com/nicholas-oduor/Password-Locker)
