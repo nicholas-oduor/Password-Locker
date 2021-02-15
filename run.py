@@ -126,7 +126,7 @@ def main():
                     if short_code == 'ex':
                             print(" ")
                             print(f'Thank you for using Password Lock. Goodbye {user_name}')
-                            # break
+                            break
 
                     elif short_code == 'cc':
                         print('\n')
