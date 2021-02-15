@@ -34,3 +34,14 @@ To fix a bug or enhance an existing module, follow these steps:
 - Users can view various saved account credentials.  
 
 - Users can delete credentials that are no longer needed.
+
+## Setup/Installation requirements
+1. You will need Internet connection.
+
+2. Clone or download and unzip the repository from github https://github.com/nicholas-oduor/Password-Locker
+
+3. You can use this command (git clone my link) to clone the project to your machine.
+
+4. cd into the folder which contains the files.
+
+5. Run python3.6 run.py to launch the program.
