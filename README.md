@@ -45,3 +45,15 @@ To fix a bug or enhance an existing module, follow these steps:
 4. cd into the folder which contains the files.
 
 5. Run python3.6 run.py to launch the program.
+
+# Requirements
+
+To work with Password Locker App you need to have some few requirements.
+
+- Python3.6 
+
+- pip
+
+- pyperclip
+
+- Code/text editor
