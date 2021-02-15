@@ -1,4 +1,4 @@
-2021 (c) Nicholas Oduor<oduor5742@gmail.com>
+2021 (c) Nicholas Oduor <oduor5742@gmail.com>
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
